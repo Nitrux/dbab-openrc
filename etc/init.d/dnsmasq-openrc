@@ -1,0 +1,22 @@
+#!/sbin/openrc-run
+
+description="Dnsmasq-Based Ad-Blocker"
+description_start="Starting Dnsmasq-Based Ad-Blocker"
+description_stop="Stopping Dnsmasq-Based Ad-Blocker"
+
+depend() {
+    need net
+    after bootmisc
+}
+
+start() {
+    ebegin "${description_start}"
+    start-stop-daemon --start --exec /usr/sbin/dbab-svr
+    eend $?
+}
+
+stop() {
+    ebegin "${description_stop}"
+    start-stop-daemon --stop --exec /usr/sbin/dbab-svr
+    eend $?
+}
