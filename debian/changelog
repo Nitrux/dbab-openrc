@@ -1,3 +1,9 @@
+dbab-openrc (0.0.3)  nitrux; urgency=medium
+
+  * Fix service dependency.
+
+ -- Uri Herrera <uri_herrera@nxos.org>  Tue, 04 Jun 2024 22:07:00 -0500
+
 dbab-openrc (0.0.2)  nitrux; urgency=medium
 
   * Fix wrong filename.

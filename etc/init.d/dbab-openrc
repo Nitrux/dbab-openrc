@@ -5,7 +5,7 @@ description_start="Starting Dnsmasq-Based Ad-Blocker"
 description_stop="Stopping Dnsmasq-Based Ad-Blocker"
 
 depend() {
-    need net
+    need dnsmasq-openrc
     after bootmisc
 }
 
